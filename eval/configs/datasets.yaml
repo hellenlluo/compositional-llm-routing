@@ -1,0 +1,19 @@
+datasets:
+  musique:
+    path: data_preprocessing/cleaned_trimmed_data/musique_cleaned.jsonl
+    format: jsonl
+    flavor: musique
+
+  morehopqa:
+    path: data_preprocessing/cleaned_trimmed_data/morehopqa_cleaned.json
+    format: json_array
+    flavor: morehopqa
+
+  stepcot:
+    path: data_preprocessing/cleaned_trimmed_data/stepcot_cleaned.json
+    format: json_array
+    flavor: stepcot
+
+pilot:
+  n_per_dataset: 200
+  seed: 42

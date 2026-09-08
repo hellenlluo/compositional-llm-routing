@@ -1,0 +1,10 @@
+judge:
+  id: qwen2.5-32b
+  hf_repo: Qwen/Qwen2.5-32B-Instruct
+  local_path: /n/fs/scratch/dl3533/models/Qwen2.5-32B-Instruct
+  dtype: bfloat16
+  max_model_len: 16384
+  max_new_tokens: 200
+  tensor_parallel_size: 2
+  # Qwen judge outputs a JSON object with "correct" boolean — no 1-5 score
+  use_json_output: true

@@ -1,0 +1,8 @@
+judge:
+  id: prometheus-7b-v2
+  hf_repo: prometheus-eval/prometheus-7b-v2.0
+  dtype: bfloat16
+  max_model_len: 8192
+  max_new_tokens: 512
+  # A score >= this counts as correct=1.
+  correct_threshold: 4

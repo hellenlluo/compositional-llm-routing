@@ -1,0 +1,58 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# Model checkpoints (large binary files, regenerable)
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# But track everything inside checkpoints folders
+!**/checkpoints/**
+
+# Judge cache (too large, regenerable)
+outputs/cache.db
+
+# LogicBench raw data (too large)
+data_preprocessing/data/logicbench/data/
+
+# LogicBench inference results (too large, regenerable)
+experiment_evals/results/logicbench/
+
+# Logs
+*.out
+outputs/logs/
+embedllm-eval/slurm-logs/
+modelsat-baseline/slurm-logs/
+modelsat-baseline/router_checkpoint*
+
+# Router analysis generated outputs
+router_analysis/**/*.png
+router_analysis/**/*.json
+
+# Non-4k output variants (keeping only 4k-token results)
+outputs/runs/
+outputs/runs_2048/
+outputs/judgments/
+outputs/judgments_2048/
+
+# Large prediction/result dumps (regenerable)
+**/predictions.json
+**/*_predictions.json
+efficiency-router/logs/
+experiment_evals/logs/
+
+# Uncompressed large jsonl (committed as .gz)
+outputs/runs_4k/musique/qwen1.5-0.5b-chat/full.jsonl
+outputs/runs_4k/musique/qwen1.5-0.5b-chat/subtask.jsonl
+
+# EmbedLLM baseline: cached source CSVs from HuggingFace (regenerable)
+outputs/embedllm/raw/

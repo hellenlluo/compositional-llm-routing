@@ -1,0 +1,65 @@
+# Embedding-friendly capability descriptions for each model.
+# These are written as dense, keyword-rich paragraphs that mirror the
+# vocabulary of the kinds of questions each model is best at — so a
+# semantic embedding of the description can be matched against an
+# embedding of an incoming question via cosine similarity.
+#
+# Keep them short and topical. Avoid org names, version numbers, and
+# marketing language — those bias the embedding toward irrelevant
+# features.
+
+descriptions:
+  qwen3-4b-thinking-2507: >
+    Step-by-step reasoning, chain of thought, multi-hop logical deduction,
+    decomposing problems into intermediate steps, math word problems,
+    arithmetic, counting, structured problem solving, deliberation before
+    answering.
+
+  deepseek-r1-distill-llama-8b: >
+    Mathematical reasoning, arithmetic, algebra, number manipulation,
+    digit operations, string transformations, counting letters and
+    syllables, reversing numbers, concatenation, chain of thought,
+    competition math, programming, scientific deduction.
+
+  medgemma-4b-it: >
+    Medicine, clinical reasoning, radiology reports, chest x-ray and CT
+    findings, differential diagnosis, anatomy, pathology, ICD and SNOMED
+    codes, drug names, lab values, patient cases, biomedical question
+    answering, hospital and healthcare terminology.
+
+  llama-3.1-8b-instruct: >
+    General factual question answering, reading comprehension,
+    Wikipedia-style passages, biographies, places, films, historical
+    events, named entities, summarization, multi-paragraph context,
+    who/what/when/where lookup questions.
+
+  qwen3-30b-a3b: >
+    General reasoning across math, code, multi-hop factual questions,
+    long-context reading comprehension, multilingual answers, complex
+    multi-step deduction, structured reasoning, broad world knowledge.
+
+  phi-4-mini-instruct: >
+    Math word problems, logic puzzles, code, structured reasoning,
+    step-by-step calculations, short well-scoped problems, textbook-style
+    questions.
+
+  mistral-7b-instruct-v0.3: >
+    General English question answering, reading comprehension over
+    provided context, summarization, dialogue, simple factual lookups,
+    no specialized math or chain-of-thought reasoning.
+
+  qwen1.5-0.5b-chat: >
+    Very simple short factual lookups, single-word answers, basic
+    dialogue, shallow questions, no multi-step reasoning, no math, no
+    long context.
+
+  mathstral-7b: >
+    Mathematics, arithmetic, algebra, calculus, number theory, geometry,
+    competition math, MATH and GSM8K problems, symbolic manipulation,
+    numeric computation, equations, derivations, mathematical word
+    problems.
+
+  llama-3.1-nemotron-nano-8b: >
+    Chain-of-thought mathematical reasoning, multi-step problem solving,
+    logical inference, code generation, structured deduction, arithmetic,
+    algebraic manipulation, step-by-step derivations.

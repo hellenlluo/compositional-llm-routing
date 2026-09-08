@@ -1,0 +1,82 @@
+models:
+  - id: qwen3-4b-thinking-2507
+    hf_repo: Qwen/Qwen3-4B-Thinking-2507
+    local_path: /n/fs/scratch/dl3533/models/Qwen3-4B-Thinking-2507
+    params_active_b: 4.0
+    params_total_b: 4.0
+    dtype: bfloat16
+    max_model_len: 32768
+
+  - id: deepseek-r1-distill-llama-8b
+    hf_repo: deepseek-ai/DeepSeek-R1-Distill-Llama-8B
+    local_path: /n/fs/scratch/dl3533/models/DeepSeek-R1-Distill-Llama-8B
+    params_active_b: 8.0
+    params_total_b: 8.0
+    dtype: bfloat16
+    max_model_len: 32768
+
+  - id: medgemma-4b-it
+    hf_repo: google/medgemma-1.5-4b-it
+    local_path: /n/fs/scratch/dl3533/models/medgemma-1.5-4b-it
+    params_active_b: 4.0
+    params_total_b: 4.0
+    dtype: bfloat16
+    max_model_len: 32768
+
+  - id: llama-3.1-8b-instruct
+    hf_repo: meta-llama/Llama-3.1-8B-Instruct
+    local_path: /n/fs/scratch/dl3533/models/Llama-3.1-8B-Instruct
+    params_active_b: 8.0
+    params_total_b: 8.0
+    dtype: bfloat16
+    max_model_len: 32768
+
+  - id: qwen3-30b-a3b
+    hf_repo: Qwen/Qwen3-30B-A3B
+    local_path: /n/fs/scratch/dl3533/models/Qwen3-30B-A3B
+    params_active_b: 3.0
+    params_total_b: 30.0
+    dtype: bfloat16
+    max_model_len: 32768
+    tensor_parallel_size: 2
+
+  - id: phi-4-mini-instruct
+    hf_repo: microsoft/Phi-4-mini-instruct
+    local_path: /n/fs/scratch/dl3533/models/Phi-4-mini-instruct
+    params_active_b: 3.8
+    params_total_b: 3.8
+    dtype: bfloat16
+    max_model_len: 32768
+    trust_remote_code: false
+
+  - id: mistral-7b-instruct-v0.3
+    hf_repo: mistralai/Mistral-7B-Instruct-v0.3
+    local_path: /n/fs/scratch/dl3533/models/Mistral-7B-Instruct-v0.3
+    params_active_b: 7.2
+    params_total_b: 7.2
+    dtype: bfloat16
+    max_model_len: 32768
+
+  - id: qwen1.5-0.5b-chat
+    hf_repo: Qwen/Qwen1.5-0.5B-Chat
+    local_path: /n/fs/scratch/dl3533/models/Qwen1.5-0.5B-Chat
+    params_active_b: 0.5
+    params_total_b: 0.5
+    dtype: bfloat16
+    max_model_len: 32768
+
+  - id: mathstral-7b
+    hf_repo: mistralai/Mathstral-7B-v0.1
+    local_path: /n/fs/scratch/dl3533/models/Mathstral-7B-v0.1
+    params_active_b: 7.2
+    params_total_b: 7.2
+    dtype: bfloat16
+    max_model_len: 32768
+
+  - id: llama-3.1-nemotron-nano-8b
+    hf_repo: nvidia/Llama-3.1-Nemotron-Nano-8B-v1
+    local_path: /n/fs/scratch/dl3533/models/Llama-3.1-Nemotron-Nano-8B-v1
+    params_active_b: 8.0
+    params_total_b: 8.0
+    dtype: bfloat16
+    max_model_len: 32768
